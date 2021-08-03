@@ -13,16 +13,25 @@ body, html {
     overflow: scroll;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 
-    .title {
-        font-size: 12px;
-        min-width: 600px;
+    .title h1 {
+        font-size: 40px !important;
     }
 
-    .about_me {
-        height: 150%;
-        min-width: 600px;
+    .title h2 {
+        font-size: 18px !important;
+    }
+
+    .about_me h1 {
+        font-size: 40px !important;
+    }
+
+    .about_me_content {
+        font-size: 18px !important;
+        width: 100% !important;
+        left: 0% !important;
+        padding: 20px !important;
     }
 
     .about_me h1 {
@@ -30,9 +39,70 @@ body, html {
         width: 100%;
         text-align: center;
     }
+
     .about_me_content {
         max-height: 400px;
         min-width: 300px;
+    }
+
+    .work h1 {
+        padding: 10px !important;
+        font-size: 35px !important;
+    }
+
+    .dctechusa {
+        margin-bottom: 10px !important;
+        width: 90% !important;
+    }
+
+    .dctechusa a {
+        font-size: 30px !important;
+    }
+
+    .radicalcompany {
+        margin-bottom: 25px !important;
+        width: 90% !important;
+    }
+
+    .radicalcompany a {
+        font-size: 30px !important;
+    }
+
+    .aol {
+        width: 90% !important;
+    }
+
+    .aol a {
+        font-size: 30px !important;
+    }
+
+    .projects {
+        height: 130% !important;
+    }
+
+    .projects h2 {
+        font-size: 35px !important;
+    }
+
+    .reviewbook {
+        width: 100% !important;
+        height: 270px !important;
+        clear: both;
+    }
+
+    .mates {
+        width: 100% !important;
+        height: 270px !important;
+
+        clear: both;
+    }
+
+    .contact p>a{
+        font-size: 20px;
+    }
+
+    .contact p {
+        font-size: 10px;
     }
 }
 
@@ -41,13 +111,15 @@ body, html {
 .nav {
     position: fixed;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 99;
-    width: 100px;
-    height: 100%;
-    top: 50%;
+    width: 100%;
+    height: 100px;
+    top: 87%;
     color: white;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 .nav span {
@@ -70,7 +142,7 @@ body, html {
     background-size: cover;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
     /* min-width: 1000px; */
     color: white;
     display:none;
@@ -137,10 +209,10 @@ body, html {
 .about_me_content {
     position: absolute;
     font-size: 20px;
-    padding: 30px;
+    padding: 10px;
     width: 50%;
     height: 250px;
-    top: 40%;
+    top: 35%;
     left: 25%;
     overflow: scroll;
     animation: fadein 2s;
@@ -150,14 +222,12 @@ body, html {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 72%;
-    left: 25%;
-    display: flex;
     flex-direction: row;
+    top: 72%;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    width: 50%;
+    width: 100%;
     animation: fadein 2s;
 }
 
@@ -202,7 +272,6 @@ a {
     height: 130%;
     color: white;
     text-align: center;
-    min-width: 600px;
 }
 
 .work h1 {
@@ -290,7 +359,6 @@ a {
     height: 100%;
     color: white;
     text-align: center;
-    min-width: 700px;
 }
 
 .reviewbook {
@@ -300,6 +368,7 @@ a {
     float: left;
     animation: fadein 2s;
     padding: 25px;
+    overflow: hidden;
 }
 
 .reviewbook h2 {
@@ -348,8 +417,45 @@ a {
     background-image: url('./images/contact.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
+.contact h1 {
+    font-size: 40px;
+    color: white;
+    padding: 30px;
+}
+
+.phone i {
+    color: rgb(114, 194, 24);
+}
+
+.phone a:hover {
+    text-shadow: 0 0 8px rgb(114, 194, 24), 0 0 16px rgb(114, 194, 24);
+}
+
+.contact a {
+    font-size: 28px;
+    color: white;
+    margin-left: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.contact p {
+    margin-top: 40px;
+    animation: 2s fadein;
+}
+
+.email i {
+    color: lightskyblue;
+}
+
+.email a:hover {
+    text-shadow: 0 0 8px lightskyblue, 0 0 16px lightskyblue;    
+}
 
 .display {
     display: grid;
