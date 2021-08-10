@@ -21,7 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
     home.classList.add('display');
 
     homeNav.addEventListener("click", () => {
-        event.preventDefault();
 
         if(!(home.classList.contains('display'))){
 
@@ -51,7 +50,6 @@ window.addEventListener("DOMContentLoaded", () => {
     })
 
     aboutNav.addEventListener("click", ()=> {
-        event.preventDefault();
 
         if(!(about.classList.contains('display'))){
 
@@ -82,7 +80,6 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     workNav.addEventListener(("click"), ()=> {
-        event.preventDefault();
 
         if(!(work.classList.contains('display'))){
 
@@ -112,7 +109,6 @@ window.addEventListener("DOMContentLoaded", () => {
     })
 
     projectsNav.addEventListener("click", ()=> {
-        event.preventDefault();
 
         if(!(projects.classList.contains('display'))){
 
@@ -142,7 +138,6 @@ window.addEventListener("DOMContentLoaded", () => {
     })
 
     contactNav.addEventListener("click", () => {
-        event.preventDefault();
 
         if(!(contact.classList.contains('display'))){
 
